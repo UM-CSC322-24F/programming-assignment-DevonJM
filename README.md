@@ -1,1 +1,2 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/DGEG6VGa)
 Programming Project #1 is available [here] (https://www.cs.miami.edu/home/wuchtys/CSC322-24F/Assessment/BoatManagement.html). Deadline is Mo, Oct 28th, 6pm. When you have completed the project, submit the solution files through your Github account. Here is a [primer] (https://www.cs.miami.edu/home/wuchtys/CSC322-24F/github.pptx) of how to submit projects.
