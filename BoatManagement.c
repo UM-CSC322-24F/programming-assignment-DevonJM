@@ -255,7 +255,7 @@ void addBoat(const char *csvData) {
         default:
             fprintf(stderr, "Unknown location type: %s\n", location);
             free(newBoat);
-            return;  // Exit if location is unknown
+            return;
     }
 
     boats[boatCount++] = newBoat;
