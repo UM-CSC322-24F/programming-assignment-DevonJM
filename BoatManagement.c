@@ -323,19 +323,20 @@ void updateMonthlyCharges() {
     printf("Monthly charges updated.\n");
 }
 
+
+// Comparison function for qsort
+int compareBoatsByName(const void *a, const void *b) {
+    // Cast the void pointers to Boat pointers
+    Boat *boatA = *(Boat **)a;
+    Boat *boatB = *(Boat **)b;
+    
+    // Compare names (case insensitive)
+    return strcasecmp(boatA->name, boatB->name);
+}
+
 // Sort boats by name
 void sortBoats() {
-    for (int i = 1; i < boatCount; i++) {
-        Boat *temp = boats[i];
-        int j = i - 1;
-
-        // Compare and shift boats
-        while (j >= 0 && strcasecmp(boats[j]->name, temp->name) > 0) {
-            boats[j + 1] = boats[j];
-            j--;
-        }
-        boats[j + 1] = temp;
-    }
+    qsort(boats, boatCount, sizeof(Boat *), compareBoatsByName);
 }
 
 
